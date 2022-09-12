@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "When a fluid is used in a Shell and Tube heat exchanger, which one of the following is not true?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "If the fluid is gas then the gas side heat transfer coefficient is the lowest",
+        "b": "Extended fins are used on the shell side to increase the Heat Transfer coefficient",
+        "c": "Baffles are provided only to work as fins",
+        "d": "Fins increase necessary heat transfer area"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In how many categories heat exchangers are classified on the basis of direction of flow of fluids?",
+      "answers": {
+        "a": "4 categories",
+        "b": "3 categories",
+        "c": "2 categories",
+        "d": "1 categories"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "A periodic type exchanger is known as __________",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Direct contact heat exchanger ",
+        "b": "Indirect contact heat exchanger",
+        "c": "Recuperator",
+        "d": "Regenerator"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What property of cold fluid remains constant in the case of an evaporator?",
+      "answers": {
+        "a": "Volume",
+        "b": "Temperature",
+        "c": "Entropy",
+        "d": "Enthalpy"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+     "question": "Number of categories heat exchanger can be classified based on the mechanical design of heat exchanger surface is _____________",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "advanced"
     }
   ]
 }
