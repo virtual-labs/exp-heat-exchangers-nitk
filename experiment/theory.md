@@ -9,6 +9,7 @@
 3. To determine the effectiveness of the heat exchanger.
 
 <br>
+
 #### Theory
 
 A heat exchanger is a system used to transfer heat between a source and a working fluid as shown in Fig 1.
