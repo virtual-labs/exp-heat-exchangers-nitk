@@ -170,7 +170,7 @@ function switchscreen(){
       document.getElementById('simscreen').style.visibility = "hidden";
       document.getElementById('textbox').style.visibility = "hidden";
       document.getElementById('textbox1').style.visibility = "hidden";
-      printcomment("<i>Area</i> A = 0.0612 m<sup>2</sup> <br><i>Cp</i> = 4.187 KJ/Kg-K", 0)
+      printcomment("<i>Area</i> A = 0.0612 m<sup>2</sup> <br><i>Cp</i> = 4.187 KJ/Kg-K<br>Type: 1. Parallel Flow, 2. Counter Flow", 0)
       calc();
     }
     if(imgfilename=="bluebkdulls"){
@@ -181,7 +181,7 @@ function switchscreen(){
       document.getElementById('textbox').style.visibility = "visible";
       document.getElementById('textbox1').style.visibility = "visible";
       temp2 =1;
-      printcomment("<i>Area</i> A = 0.0612 m<sup>2</sup> <br><i>Cp</i> = 4.187 KJ/Kg-K", 1)
+      printcomment("<i>Area</i> A = 0.0612 m<sup>2</sup> <br><i>Cp</i> = 4.187 KJ/Kg-K<br>Type: 1. Parallel Flow, 2. Counter Flow", 1)
       $("#symbol1").attr("style", "visibility:hidden");
       $("#symbol2").attr("style", "visibility:hidden");
       $("#symbol3").attr("style", "visibility:hidden");
@@ -223,7 +223,7 @@ function calc(){
     }
     else{
       $("#symbol1").attr("style", "visibility:visible; color:red;");
-      var content = '<p><span style=" color: #028102;">Correct answer</span> <span style="color: #e7722b;"> Q = '+lmtd+'</span> ';
+      var content = '<p><span style=" color: #028102;">Correct answer</span> <span style="color: #e7722b;"> ΔTM = '+lmtd+'</span> ';
         
     }
     $("#answer1").html(content);
@@ -239,7 +239,7 @@ function calc(){
     }
     else{
       $("#symbol3").attr("style", "visibility:visible; color:red;");
-      var  content = '<p><span style=" color: #028102;">Correct answer</span> <span style="color: #e7722b;"> K = '+u+'</span> ';
+      var  content = '<p><span style=" color: #028102;">Correct answer</span> <span style="color: #e7722b;"> U = '+u+'</span> ';
     }
     $("#answer2").html(content);
   });
@@ -254,7 +254,7 @@ function calc(){
     }
     else{
       $("#symbol5").attr("style", "visibility:visible; color:red; position:relative; left :-20px;");
-      var  content = '<p><span style=" color: #028102;">Correct answer</span> <span style="color: #e7722b;"> K = '+e+'</span> ';
+      var  content = '<p><span style=" color: #028102;">Correct answer</span> <span style="color: #e7722b;"> ε  = '+e+'</span> ';
     }
     $("#answer3").html(content);
   });
@@ -412,7 +412,7 @@ function drawModel()
 
  
     drawGradient();
-    printcomment("<i>Area</i> A = 0.0612 m<sup>2</sup> <br><i>Cp</i> = 4.187 KJ/Kg-K", 1)
+    printcomment("<i>Area</i> A = 0.0612 m<sup>2</sup> <br><i>Cp</i> = 4.187 KJ/Kg-K<br>Type: 1. Parallel Flow, 2. Counter Flow", 1)
   }
 //}
   
@@ -599,9 +599,9 @@ send an email to adityaraman09@gmail.com for any communication
   <div>
     <div  >
       <p><b>Log mean Temp. Difference, </b></p>
-      <div class="tooltip"><label for="lmtd"><i> LMTD = </i></label><input type="number" id="lmtdvalue" style="width: 125px;"> &deg;C
+      <div class="tooltip"><label for="lmtd"><i> &Delta;TM = </i></label><input type="number" id="lmtdvalue" style="width: 125px;"> &deg;C
         <span class="tooltiptext">
-          <p> LMTD = 
+          <p> &Delta;TM = 
             <span style="font-size: large;" class="frac"><sup>&Theta;<sub>i</sub> - &Theta;<sub>o</sub></sup><span>&frasl;</span><sub>ln(&Theta;<sub>i</sub>/&Theta;<sub>o</sub>)</sub>
             </span>
           </p>
