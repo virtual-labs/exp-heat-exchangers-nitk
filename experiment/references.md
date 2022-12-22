@@ -6,7 +6,8 @@
   <tr style="background-color: white">
     <td>
     <ol>
-    <li>NITK lab manual
+    <li>Holman J. P., Heat Transfer, McGraw Hill Publication, 8th Edition, 1996.</li>
+    <li>C. P. Arora, Engineering Heat Transfer, Khanna Publishers, India, 1996.</li>
     <td>Developer : Dr. K V Gangadharan | NITK</br></br>
     Contributors :
     <ul style="list-style-type: none;">
@@ -17,6 +18,7 @@
     <li>Vishwas | NITK</li>
     <li>Akshaya | NITK</li>
     <li>Anusha B Salian | NITK</li>
+     </ul></td>
      </ul></td>
   </tr>
 </table>
