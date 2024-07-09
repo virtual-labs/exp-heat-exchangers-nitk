@@ -1,15 +1,25 @@
-#### These procedure steps will be followed on the simulator
+### Procedure
 
-1. The following window appears after clicking on the simulation tab.<br>
-![alt text](images/ex1.png)<br>
+<div style="text-align:left">
+  Click on the Objective icon <img src="images/objecticon.png" alt="Alt text" style="height:80px; width:80px;">  to view the Objective of the simulation. 
 
-2. Select the type of the heat exchanger you want by adjusting the slider to 1 for parallel flow are 2 for counter flow<br>
-![alt text](images/ex2.png)<br>
+   ![Alt text](images/Simscreen1.png)
+   
+   Click on the Description icon <img src="images/desicon.png" alt="Alt text" style="height:80px; width:80px;">  to view the description of the simulation. 
 
-3. Click on play button and wait for 5 seconds to allow it to reach steady state. Note down the flow rates and four temperatures.<br>
-![alt text](images/ex3.png)<br>
+   ![Alt text](images/descriptionscreen.png)
 
-4. Click next. Verify your calculations by entering the input boxes.<br>
-![alt text](images/ex4.png)<br>
+  Click on the Experiment icon <img src="images/expicon.png" alt="Alt text" style="height:80px; width:80px;">  to view the experimental setup. 
 
-5. Redo the experiment if you wish to.
+  ![Alt text](images/expscreen.png)
+
+   Select any one voltage value and click on the Start button <img src="images/startButton.png" alt="Alt text" style="height:80px; width:80px;"> to perform the experiment, click on the Reset button <img src="images/resetButton.png" alt="Alt text" style="height:80px; width:80px;"> to reset the experiment.
+
+
+   After performing the experiment, click on the Solve icon <img src="images/solveicon.png" alt="Alt text" style="height:80px; width:80px;"> 
+
+   ![Alt text](images/solvescreen.png)
+
+
+   Calculate the result and click Check button <img src="images/checkButton.png" alt="Alt text" style="height:80px; width:80px;"> to evaluate the result. 
+</div>
