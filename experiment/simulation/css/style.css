@@ -101,6 +101,7 @@ h1 {
   padding: 1.2rem 1.6rem;
   border-radius: 0.9rem;
   left: 0;
+  cursor: pointer;
 }
 
 .logo-div {
@@ -281,8 +282,10 @@ h1 {
 .explore {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 5rem;
+  gap: 0rem;
+  /* align-items: center; */
+  padding: 1rem;
+  /* justify-content: center; */
 }
 
 .objective {
@@ -304,15 +307,20 @@ h1 {
 .objective__main {
   border: 2px solid var(--clr-title-background);
   font-size: 1.8rem;
+  margin: 5rem;
   padding: 2rem;
   border-radius: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
 }
 
 .model {
-  width: 100%;
+  width: 80%;
 }
-
+.mode1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .model-detail {
   /* display: grid;
   grid-template-columns: 1fr 1fr; */
@@ -323,7 +331,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* padding: 1em 0; */
-
+margin-top: 50px;
   bottom: -12px;
   /* width: 100%; */
 }
@@ -412,6 +420,7 @@ pointer-events: none;
   align-self: center;
 }
 .btn-check {
+  padding: 0.5rem;
   grid-column: 1/-1;
   align-self: center;
 }
@@ -492,25 +501,27 @@ pointer-events: none;
   font-weight: 700;
 }
 .btn {
-  padding: 1rem;
   font-weight: 700;
   border: none;
   background-image: linear-gradient(
     to bottom,
     var(--clr-side-background2),
-    var(--clr-side-background3)
+    var(--clr-side-background3),
+    var(--clr-side-background2)
   );
   color: var(--clr-text-clr);
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.2s;
+  border: 0.3rem solid transparent;
   justify-self: center;
 }
 .btn:hover {
   background-image: linear-gradient(
     to bottom,
     var(--clr-side-background2),
-    var(--clr-side-background3)
+    var(--clr-side-background3),
+    var(--clr-side-background2)
   );
   background-clip: text;
   color: transparent;
