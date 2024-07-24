@@ -15,6 +15,7 @@
 |  3   |     Akshaya     |   NITK    |
 |  4   | Anusha B Salian |   NITK    |
 |  5   |    Prajna K     |   NITK    |
+
 ### Content Developers:
 
 | SNo. |         Name          | Institute |
@@ -24,4 +25,4 @@
 |  3   |    Nagaraj Kamath     |   NITK    |
 |  4   |      Vishwas A S      |   NITK    |
 |  5   | Steevan Loyd Sequeira |   NITK    |
-|  5   |    Ganesh Baskaran    |   NITK    |
+|  6   |    Ganesh Baskaran    |   NITK    |
