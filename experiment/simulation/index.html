@@ -114,7 +114,7 @@
                       <p>Area, A = 0.06 m<sup>2</sup></p>
                     <p>Cp = 4.187 KJ/Kg-K</p>
                     
-                    <p>Type: 1. Parallel flow, 2. Counter Flow</p>
+                    <!-- <p>Type: 1. Parallel flow, 2. Counter Flow</p> -->
                   </footer>
                   </div>
                 </div>
@@ -134,7 +134,7 @@
                       value="1"
                       class="voltage"
                     />
-                    <label for="v1" class="voltage_label">1</label>
+                    <label for="v1" class="voltage_label">1. Parallel Flow</label>
                   </div>
                   <div>
 
@@ -147,7 +147,7 @@
                       value="2"
                       class="voltage"
                     />
-                    <label for="v2" class="voltage_label">2</label>
+                    <label for="v2" class="voltage_label">2. Control Flow</label>
                   </div>
                   
                   <div class="temperature-set">
@@ -194,13 +194,13 @@
                     <div class="graph" id="graph"></div>
                   </div> -->
                   <div class="questions">
-                    <p class="warning"> Please enter a value rounded upto two decimal points</p>
+                    <!-- <p class="warning"> Please enter a value rounded upto two decimal points</p> -->
                     <div class="question-three">
                       <p id="formula"></p>
                     </div>
                     <div class="question-two">
                       <div class="question-title">Effectiveness</div>
-                      <div class="question-formula">&epsilon; = <span style="font-size: large;" class="frac"><sup>Wc.Cp.(T<sub>ci</sub> - T<sub>co</sub>)</sup><span>&frasl;</span><sub>C<sub>min</sub>.(T<sub>hi</sub> - T<sub>ci</sub>)</sub></span></div>
+                      <div class="question-formula">&epsilon; = <span style="font-size: large;" class="frac"><sup>Wc.Cp.(T<sub>co</sub> - T<sub>ci</sub>)</sup><span>&frasl;</span><sub>C<sub>min</sub>.(T<sub>hi</sub> - T<sub>ci</sub>)</sub></span></div>
                       <p class="question-label">&epsilon; =  </p>
                       <input class="question-input question-input2" type="number"/>
                       <p class="question-unit question-unit2"></p>
@@ -209,7 +209,7 @@
                     </div>
                     <div class="question-three">
                       <div class="question-title">Overall Heat Transfer Coefficient</div>
-                      <div class="question-formula">U = <span style="font-size: large;" class="frac"><sup>Wc.Cp.(T<sub>ci</sub> - T<sub>co</sub>)</sup><span>&frasl;</span><sub>A.(&Delta;T)<sub>m</sub></span> W/m.K</div>
+                      <div class="question-formula">U = <span style="font-size: large;" class="frac"><sup>Wc.Cp.(T<sub>co</sub> - T<sub>ci</sub>)</sup><span>&frasl;</span><sub>A.(&Delta;T)<sub>m</sub></span> W/m.K</div>
                       <p class="question-label">U =  </p>
                       <input class="question-input question-input3" type="number"/>
                       <p class="question-unit question-unit3">W/m.K</p>
