@@ -35,7 +35,7 @@ let time2 = 0;
 
 //point tracing section and initial(atmospheric section)
 let t1 = [26, 28.1, 26.5, 27];
-var th = [45,45,45,45];
+var th = [45, 45, 45, 45];
 let off = [0, 0, 0, 0, 0];
 let slope = [-282.86, -315.71, -354.29];
 let k = [40.83, 37.99, 37.61];
@@ -46,7 +46,10 @@ let temp1 = 2;
 let temp2 = 0;
 let tempslope = 0;
 let tempk = 0;
-var lmtd = 1, u=1, e = 1, w = [0,0];
+var lmtd = 1,
+  u = 1,
+  e = 1,
+  w = [0, 0];
 function displayDiv(ele) {
   const taskScreen = document.querySelectorAll(".task-screen");
   taskScreen.forEach((task) => {
@@ -76,7 +79,7 @@ function displayDiv(ele) {
       temp1 = 1;
       validation();
       // document.querySelector("#info").innerHTML = "Parallel Flow";
-    } else{
+    } else {
       document.querySelector("#info").innerHTML =
         "Perform the experiment to solve the questions";
       // document.querySelector(".graph-div").classList.remove("hide");
@@ -86,50 +89,51 @@ function displayDiv(ele) {
 }
 //Change in Variables with respect to time
 function varinit() {
-  
-  
-  $('#vslider').slider("value", v);	
-	$('#vspinner').spinner("value", v);
-  
-  if(time2 > 0){ t1[0] += off[0];};
-  if(time2 > 0){ t1[1] += off[1];};
-  if(time2 > 3){t1[2] += off[2];};
-  if(time2 > 3){t1[3] += off[3];};
+  $("#vslider").slider("value", v);
+  $("#vspinner").spinner("value", v);
 
-  if(v == "1"){
+  if (time2 > 0) {
+    t1[0] += off[0];
+  }
+  if (time2 > 0) {
+    t1[1] += off[1];
+  }
+  if (time2 > 3) {
+    t1[2] += off[2];
+  }
+  if (time2 > 3) {
+    t1[3] += off[3];
+  }
+
+  if (v == "1") {
     w[0] = 0.135;
-    w[1] = 0.140;
+    w[1] = 0.14;
     lmtd = 12.51;
-    u = 127.60;
+    u = 127.6;
     e = 0.31;
     // $("#formula").html("<i>&Theta;<sub>i</sub></i> = T<sub>hi</sub> - T<sub>ci</sub> <br> <i>&Theta;<sub>o</sub></i> = T<sub>ho</sub> - T<sub>co</sub>");
-  }
-  else if(v == "2"){
-    w[0] = 0.137
-    w[1] = .100;
+  } else if (v == "2") {
+    w[0] = 0.137;
+    w[1] = 0.1;
     lmtd = 13.98;
     u = 155.08;
     e = 0.56;
     // $("#formula").html("<i>&Theta;<sub>i</sub></i> = T<sub>hi</sub> - T<sub>co</sub> <br> <i>&Theta;<sub>o</sub></i> = T<sub>ho</sub> - T<sub>ci</sub>");
-  }
-  else{
+  } else {
     w[0] = 0;
     w[1] = 0;
     lmtd = 1;
     u = 1;
-    e = 1; 
+    e = 1;
   }
- 
+
   vfspinner.textContent = vf;
   temperature1.textContent = w;
   temperature2.textContent = t1[0].toFixed(2);
-  console.log( t1[1].toFixed(2))
+  console.log(t1[1].toFixed(2));
   temperature3.textContent = t1[1].toFixed(2);
   temperature4.textContent = t1[2].toFixed(2);
   temperature5.textContent = t1[3].toFixed(2);
-
-
-  
 }
 
 //water temperature changes
@@ -141,7 +145,6 @@ function watertemp() {
     case 54:
       t1[6] += 1.2;
       break;
-   
   }
 }
 
@@ -155,11 +158,11 @@ function simperiod() {
     temp1 = 0;
     temp2 = 1;
     watertemp();
-    $('#playpausebutton').css({
-          "opacity":1,
-          
-          // "pointer-events":"none"
-        });
+    $("#playpausebutton").css({
+      opacity: 1,
+
+      // "pointer-events":"none"
+    });
     //printcomment("Click forward button for calculations", 1);
     //printcomment("Click restart button for doing experienment again", 2);
 
@@ -190,97 +193,100 @@ function simperiod() {
   }
 }
 //draw gradient w.r.t. time in thermometer water flow and heater
-function drawGradient(){
-
-
+function drawGradient() {
   //heater simulation
-  var h = 180*time1;
+  var h = 180 * time1;
   //create gradient
-  var grd1 = ctx.createLinearGradient(0, 0, h, 0)
-  grd1.addColorStop(0,"red");
-  grd1.addColorStop(1,"white");
+  var grd1 = ctx.createLinearGradient(0, 0, h, 0);
+  grd1.addColorStop(0, "red");
+  grd1.addColorStop(1, "white");
   // Fill with gradient
   ctx.fillStyle = grd1;
   ctx.fillRect(158, 78, 305, 28);
-   
-   if(currentVoltage == "1"){
+
+  if (currentVoltage == "1") {
     //outer parallel tube simulation
     document.querySelector("#info").textContent = "Parallel Flow";
-    console.log("par")
-    var w = 180*time1;
+    console.log("par");
+    var w = 180 * time1;
     //create gradient
-    var grd2 = ctx.createLinearGradient(0, 0, w, 0)
-    grd2.addColorStop(0,"skyblue");
-    grd2.addColorStop(1,"white");
+    var grd2 = ctx.createLinearGradient(0, 0, w, 0);
+    grd2.addColorStop(0, "skyblue");
+    grd2.addColorStop(1, "white");
     // Fill with gradient
     ctx.fillStyle = grd2;
     ctx.fillRect(180, 56, 264, 20);
     ctx.fillRect(180, 110, 264, 20);
     ctx.fillRect(184, 48, 15, 10);
-    ctx.fillRect(419, 130, 13, 10)
-  }
-  else{
+    ctx.fillRect(419, 130, 13, 10);
+  } else {
     //outer tube gradient
-    document.querySelector("#info").textContent  = "Counter Flow";
-    console.log("count")
-    var x = 150*time1;
-    var y = 500-x;
+    document.querySelector("#info").textContent = "Counter Flow";
+    console.log("count");
+    var x = 150 * time1;
+    var y = 500 - x;
     // Create gradient
-    var grd = ctx.createLinearGradient(500, 0, y, 0)
-    grd.addColorStop(0,"skyblue");
-    grd.addColorStop(1,"white");
+    var grd = ctx.createLinearGradient(500, 0, y, 0);
+    grd.addColorStop(0, "skyblue");
+    grd.addColorStop(1, "white");
     // Fill with gradient
     ctx.fillStyle = grd;
     ctx.fillRect(181, 58, 262, 20);
     ctx.fillRect(182, 108, 262, 20);
     ctx.fillRect(184, 48, 15, 10);
-    ctx.fillRect(419, 130, 15, 10)
+    ctx.fillRect(419, 130, 15, 10);
   }
 
-  
   //cross sectional simulation
   var x = 168,
     y = 281,
     // Radii of the white glow.
-    innerRadius = 4*time1,
-    outerRadius = 10*time1,
+    innerRadius = 4 * time1,
+    outerRadius = 10 * time1,
     // Radius of the entire circle.
     radius = 50;
 
-var gradient = ctx.createRadialGradient(x, y, innerRadius, x, y, outerRadius);
-//gradient.addColorStop(0, 'white');
-gradient.addColorStop(0, '#ff9999');
-gradient.addColorStop(.59,"#99ccff");
-gradient.addColorStop(1, 'white');
+  var gradient = ctx.createRadialGradient(x, y, innerRadius, x, y, outerRadius);
+  //gradient.addColorStop(0, 'white');
+  gradient.addColorStop(0, "#ff9999");
+  gradient.addColorStop(0.59, "#99ccff");
+  gradient.addColorStop(1, "white");
 
-ctx.arc(168, 281, radius, 0, 2 * Math.PI);
+  ctx.arc(168, 281, radius, 0, 2 * Math.PI);
 
-ctx.fillStyle = gradient;
-ctx.fill();
+  ctx.fillStyle = gradient;
+  ctx.fill();
 
   // //thermometer heights add offset
-   if(time1 > 0){  th[0] += .9;};
-   if(time1 > 0){  th[1] += .7;};
-   if(time1 > 3){  th[2] += .6;};
-   if(time1 > 3){  th[3] += .9;};
+  if (time1 > 0) {
+    th[0] += 0.9;
+  }
+  if (time1 > 0) {
+    th[1] += 0.7;
+  }
+  if (time1 > 3) {
+    th[2] += 0.6;
+  }
+  if (time1 > 3) {
+    th[3] += 0.9;
+  }
 
-   //thermometers drawing
-    ctx.fillStyle = "black";
-    ctx.lineJoin = "round";
+  //thermometers drawing
+  ctx.fillStyle = "black";
+  ctx.lineJoin = "round";
 
-   //thermometer reading
-   ctx.beginPath();
-   ctx.fillRect(330.25, 350, 1.5, -th[0]);
-   ctx.fillRect(383.25, 350, 1.5, -th[1]);
-   ctx.fillRect(438,    350, 1.5, -th[2]);
-   ctx.fillRect(489, 350, 1.5, -th[3]);
-   ctx.arc(168, 281, 50, 0, 2 * Math.PI);   
-   ctx.stroke();
-   ctx.beginPath();
-   ctx.arc(168, 281, 20, 0, 2 * Math.PI);
-   ctx.stroke();
+  //thermometer reading
+  ctx.beginPath();
+  ctx.fillRect(330.25, 350, 1.5, -th[0]);
+  ctx.fillRect(383.25, 350, 1.5, -th[1]);
+  ctx.fillRect(438, 350, 1.5, -th[2]);
+  ctx.fillRect(489, 350, 1.5, -th[3]);
+  ctx.arc(168, 281, 50, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(168, 281, 20, 0, 2 * Math.PI);
+  ctx.stroke();
 }
-
 
 // initial model
 function drawModel() {
@@ -319,11 +325,11 @@ function comment1() {
     //printcomment("start simulation", 0);
     if (currentVoltage == 1) {
       vf = 0.135;
-      w=0.140
+      w = 0.14;
     } else if (currentVoltage == 2) {
       vf = 0.137;
-      w=0.100
-    } 
+      w = 0.1;
+    }
     offset();
   }
 }
@@ -342,9 +348,9 @@ function offset() {
     off[1] = 2.38;
     off[2] = 0.25;
     off[3] = 9.5;
-  } 
+  }
   // else if (currentVoltage == 30) {
- 
+
   //   off[0] = 23.7;
   //   off[1] = 22.5;
   //   off[2] = 22;
@@ -412,36 +418,34 @@ function validation() {
   //   tempk = k[1];
   // }
 
-  if(currentVoltage == "1"){
+  if (currentVoltage == "1") {
     w[0] = 0.135;
-    w[1] = 0.140;
+    w[1] = 0.14;
     lmtd = 12.51;
-  
-    u = 127.60;
+
+    u = 127.6;
     e = 0.31;
-    $("#formula").html("<i>&Theta;<sub>i</sub></i> = T<sub>hi</sub> - T<sub>ci</sub> <br> <i>&Theta;<sub>o</sub></i> = T<sub>ho</sub> - T<sub>co</sub>");
+    $("#formula").html(
+      "<i>&Theta;<sub>i</sub></i> = T<sub>hi</sub> - T<sub>ci</sub> <br> <i>&Theta;<sub>o</sub></i> = T<sub>ho</sub> - T<sub>co</sub>"
+    );
     // $("#formula").html("<i>&Theta;<sub>i</sub></i> = T<sub>hi</sub> - T<sub>ci</sub> <br> <i>&Theta;<sub>o</sub></i> = T<sub>ho</sub> - T<sub>co</sub>");
-  }
-  else if(currentVoltage == "2"){
-    w[0] = 0.137
-    w[1] = .100;
+  } else if (currentVoltage == "2") {
+    w[0] = 0.137;
+    w[1] = 0.1;
     lmtd = 13.98;
     u = 155.08;
     e = 0.56;
-    $("#formula").html("<i>&Theta;<sub>i</sub></i> = T<sub>hi</sub> - T<sub>co</sub> <br> <i>&Theta;<sub>o</sub></i> = T<sub>ho</sub> - T<sub>ci</sub>");
+    $("#formula").html(
+      "<i>&Theta;<sub>i</sub></i> = T<sub>hi</sub> - T<sub>co</sub> <br> <i>&Theta;<sub>o</sub></i> = T<sub>ho</sub> - T<sub>ci</sub>"
+    );
     // $("#formula").html("<i>&Theta;<sub>i</sub></i> = T<sub>hi</sub> - T<sub>co</sub> <br> <i>&Theta;<sub>o</sub></i> = T<sub>ho</sub> - T<sub>ci</sub>");
-  }
-  else{
+  } else {
     w[0] = 0;
     w[1] = 0;
     lmtd = 1;
     u = 1;
-    e = 1; 
+    e = 1;
   }
-
-
-
-
 
   btnCheck1.addEventListener("click", () => validateAnswer1());
   btnCheck2.addEventListener("click", () => validateAnswer2());
@@ -456,7 +460,9 @@ function validateAnswer1() {
   let userEnteredValue = Number(
     document.querySelector(".question-input1").value
   );
-  let answer = userEnteredValue === lmtd ? true : false;
+  // validateNearToAnswer(correctAnswer, userEnteredValue);
+  // let answer = userEnteredValue === lmtd ? true : false;
+  let answer = validateNearToAnswer(lmtd, userEnteredValue);
   if (!userEnteredValue) return;
   if (!answer) {
     correctAnswer.classList.remove("hide");
@@ -474,7 +480,8 @@ function validateAnswer2() {
   let userEnteredValue = Number(
     document.querySelector(".question-input2").value
   );
-  let answer = userEnteredValue === e ? true : false;
+  // let answer = userEnteredValue === e ? true : false;
+  let answer = validateNearToAnswer(e, userEnteredValue);
   if (!userEnteredValue) return;
   if (!answer) {
     correctAnswer.classList.remove("hide");
@@ -492,7 +499,8 @@ function validateAnswer3() {
   let userEnteredValue = Number(
     document.querySelector(".question-input3").value
   );
-  let answer = userEnteredValue === u ? true : false;
+  let answer = validateNearToAnswer(u, userEnteredValue);
+  // let answer = userEnteredValue === u ? true : false;
   if (!userEnteredValue) return;
   if (!answer) {
     correctAnswer.classList.remove("hide");
@@ -501,6 +509,18 @@ function validateAnswer3() {
   } else if (answer) {
     correctAnswer.classList.add("hide");
     unit.innerHTML += " <span class='correct'>&#x2713;</span>";
+  }
+}
+
+function validateNearToAnswer(exactAnswer, userAnswer) {
+  const tolerance = 0.01; // Define the tolerance level
+  const lowerBound = exactAnswer - tolerance;
+  const upperBound = exactAnswer + tolerance;
+
+  if (userAnswer < lowerBound || userAnswer > upperBound) {
+    return false; // Answer is outside the tolerance range
+  } else {
+    return true; // Answer is within the tolerance range
   }
 }
 function resetAll() {
