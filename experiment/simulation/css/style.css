@@ -420,6 +420,7 @@ h1 {
 }
 .question-unit {
   align-self: center;
+  justify-self: start;
 }
 .btn-check {
   padding: 0.5rem;

@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="css/query.css" />
     <!-- <script defer src="https://code.jquery.com/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <script
       defer
       src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -200,8 +201,8 @@
                     </div>
                     <div class="question-two">
                       <div class="question-title">Effectiveness</div>
-                      <div class="question-formula">&epsilon; = <span style="font-size: large;" class="frac"><sup>Wc.Cp.(T<sub>co</sub> - T<sub>ci</sub>)</sup><span>&frasl;</span><sub>C<sub>min</sub>.(T<sub>hi</sub> - T<sub>ci</sub>)</sub></span></div>
-                      <p class="question-label">&epsilon; =  </p>
+                      <div class="question-formula">$$ε = \frac{W_c.C_p.(T_{co}-T_{ci})}{C_{min}.(T_{hi}-T_{ci})}$$</div>
+                      <p class="question-label">$$ε =$$  </p>
                       <input class="question-input question-input2" type="number"/>
                       <p class="question-unit question-unit2"></p>
                       <p class="correct-answer correct-answer2 hide"></p>
@@ -209,24 +210,20 @@
                     </div>
                     <div class="question-three">
                       <div class="question-title">Overall Heat Transfer Coefficient</div>
-                      <div class="question-formula">U = <span style="font-size: large;" class="frac"><sup>Wc.Cp.(T<sub>co</sub> - T<sub>ci</sub>)</sup><span>&frasl;</span><sub>A.(&Delta;T)<sub>m</sub></span> W/m.K</div>
-                      <p class="question-label">U =  </p>
+                      <div class="question-formula">$$U = \frac{W_c.C_p.(T_{co}-T_{ci})}{A.(ΔT)_m}W/m.K$$</div>
+                      <p class="question-label">$$U =$$  </p>
                       <input class="question-input question-input3" type="number"/>
-                      <p class="question-unit question-unit3">W/m.K</p>
+                      <p class="question-unit question-unit3">$$W/m.K$$</p>
                       <p class="correct-answer correct-answer3 hide"></p>
                       <button class="btn btn-check btn-check3">Check</button>
                     </div>
                     
                     <div class="question-one">
                       <div class="question-title">Log mean Temp Difference</div>
-                      <div class="question-formula"><p> &Delta;TM = 
-                        <span style="font-size: large;" class="frac"><sup>&Theta;<sub>i</sub> - &Theta;<sub>o</sub></sup><span>&frasl;</span><sub>ln(&Theta;<sub>i</sub>/&Theta;<sub>o</sub>)</sub>
-                        </span>
-                      </p>
-                   </span></div>
-                      <p class="question-label">&Delta;TM = </p>
+                      <div class="question-formula"><p> $$ (ΔT)M = \frac{Θ_i - Θ_o}{ln(Θ_i/Θ_o)} °C/m$$</div>
+                      <p class="question-label">$$ (ΔT)M = $$</p>
                       <input class="question-input question-input1" type="number"/>
-                      <p class="question-unit question-unit1"><sup>&deg;</sup>C/m</p>
+                      <p class="question-unit question-unit1">$$°C/m$$</p>
                       <p class="correct-answer correct-answer1 hide"></p>
                       <button class="btn btn-check btn-check1">Check</button>
                     </div>
