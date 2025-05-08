@@ -13,6 +13,7 @@ A heat exchanger is a system used to transfer heat between two fluids, one hot a
 <center>
 
 ![alt text](images/1.png)
+
 Fig 1. Schematic representation of a heat exchanger
 
 </center>
