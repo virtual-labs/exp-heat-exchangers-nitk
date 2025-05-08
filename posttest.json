@@ -1,0 +1,82 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "LMTD in case of counter flow heat exchanger as compared to parallel flow heat exchanger is",
+      "answers": {
+        "a": "Higher",
+        "b": "Lower",
+        "c": "Same",
+        "d": "Depends on the area of heat exchanger"
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). In a counter-flow heat exchanger, the hot fluid and the cold fluid flow in opposite directions. This configuration allows for a larger temperature difference between the two fluids over the length of the heat exchanger, which results in a higher LMTD. The larger the LMTD, the more heat is transferred.",
+        "b": "The right answer is (a). LMTD in case of parallel flow exchanger is lower as compared to counter flow heat exchanger. In a parallel-flow heat exchanger, the hot and cold fluids flow in the same direction. As a result, the temperature difference between the two fluids decreases along the length of the heat exchanger, leading to a lower LMTD.",
+        "c": "The right answer is (a). The LMTD for a counter-flow and a parallel-flow heat exchanger could be the same under very specific conditions. This would require the inlet and outlet temperatures of the hot and cold fluids to be adjusted such that the temperature differences at both ends of the heat exchangers are equal. This is a highly unlikely scenario in practical applications, as it would require precise control over the fluid temperatures and flow rates.",
+        "d": "The right answer is (a). The LMTD does not depends on area of heat exchangers. It depends on the temperature difference between the two fluids."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The unit of overall coefficient of heat transfer is",
+      "answers": {
+        "a": "W/m²K",
+        "b": "W/m²",
+        "c": "W/mK",
+        "d": "W/m"
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). This unit represents the amount of heat transferred per unit area per unit temperature difference. It's used in calculating the heat transfer, typically by convection or phase transition between a fluid and a solid.",
+        "b": "The right answer is (a). The unit W/m² (Watts per square meter) is used to represent the heat flux in heat transfer. Heat flux, denoted by q, is the rate of heat transfer per unit area. It is defined as the amount of heat energy transferred through a given surface area per unit time.",
+        "c": "The right answer is (a). The unit W/mK (Watts per meter Kelvin) is used to represent the thermal conductivity in heat transfer. Thermal conductivity is a measure of a substance's ability to transfer heat through a material by conduction.",
+        "d": "The right answer is (a). The unit W/m (Watts per meter) is used to represent the thermal conductivity in heat transfer. Thermal conductivity is a measure of a material's ability to conduct heat. It is defined as the amount of heat (in Watts) that is conducted through a one-meter thickness of a material per degree temperature difference (Kelvin or K)."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In parallel flow the temperature difference between the two fluids is large at the entrance end, but it becomes small at the exit end.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). In a parallel-flow heat exchanger, the hot and cold fluids flow in the same direction. As a result, the temperature difference between the two fluids decreases along the length of the heat exchanger.",
+        "b": "The right answer is (a). In a parallel-flow heat exchanger, the hot and cold fluids flow in the same direction. As a result, the temperature difference between the two fluids decreases along the length of the heat exchanger."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which of the heat exchangers is most coefficient?",
+      "answers": {
+        "a": "Parallel flow ",
+        "b": "Cross flow",
+        "c": "Counter flow",
+        "d": "Tangent flow"
+      },
+      "explanations": {
+        "a": "The right answer is (c). In a parallel-flow heat exchanger, the hot and cold fluids flow in the same direction. As a result, the temperature difference between the two fluids decreases along the length of the heat exchanger, leading to a lower LMTD.",
+        "b": "The right answer is (c). In a cross-flow heat exchanger, the fluids flow perpendicular to each other. This configuration does not maintain a large temperature difference between the two fluids over the entire length of the heat exchanger. As a result, the LMTD and the overall heat transfer rate are lower than in a counter-flow heat exchanger.",
+        "c": "Correct, the right answer is (c). This is because in a counter-flow heat exchanger, the hot and cold fluids flow in opposite directions, which allows for a larger temperature difference between the two fluids over the length of the heat exchanger.",
+        "d": "The right answer is (c). In a counter-flow heat exchanger, the hot and cold fluids flow in opposite directions, which allows for a larger temperature difference between the two fluids over the length of the heat exchanger. So counter flow will have higher coefficient."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+     "question": "The log mean temperature difference is greater for parallel flow",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "The right answer is (b). LMTD in case of parallel flow exchanger is lower as compared to counter flow heat exchanger. In a parallel-flow heat exchanger, the hot and cold fluids flow in the same direction. As a result, the temperature difference between the two fluids decreases along the length of the heat exchanger, leading to a lower LMTD.",
+        "b": "Correct, the right answer is (b). LMTD in case of parallel flow exchanger is lower as compared to counter flow heat exchanger. In a parallel-flow heat exchanger, the hot and cold fluids flow in the same direction. As a result, the temperature difference between the two fluids decreases along the length of the heat exchanger, leading to a lower LMTD."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
+  ]
+}

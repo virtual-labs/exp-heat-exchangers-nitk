@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "When a fluid is used in a Shell and Tube heat exchanger, which one of the following is not true?",
+      "answers": {
+        "a": "If the fluid is gas then the gas side heat transfer coefficient is the lowest",
+        "b": "Extended fins are used on the shell side to increase the Heat Transfer coefficient",
+        "c": "Baffles are provided only to work as fins",
+        "d": "Fins increase necessary heat transfer area"
+      },
+      "explanations": {
+        "a": "The right answer is (c).  In general, the heat transfer coefficient for gases is lower than that for liquids due to the lower density and specific heat capacity of gases.",
+        "b": "The right answer is (c). Extended surfaces, or fins, are indeed used to increase the heat transfer coefficient. They are primarily used to increase the surface area when the heat transfer coefficient on that fluid side is relatively low, consequently increasing the total rate of heat transfer.",
+        "c": "Correct, the right answer is (c). Baffles are provided to give support to the tubes and increase the turbulence of the fluid in shell side.",
+        "d": "The right answer is (c). Fins are generally used to increase the Heat transfer Area when the heat transfer coefficient on that fluid side is comparatively low."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In how many categories heat exchangers are classified on the basis of direction of flow of fluids?",
+      "answers": {
+        "a": "4 categories",
+        "b": "3 categories",
+        "c": "2 categories",
+        "d": "1 categories"
+      },
+      "explanations": {
+        "a": "The right answer is (b). Heat exchangers are typically classified into three categories based on the direction of fluid flow: 1) Counterflow 2) Crossflow 3) Parallel flow.",
+        "b": "Correct, the right answer is (b). Heat exchangers are typically classified into three categories based on the direction of fluid flow: 1) Counterflow 2) Crossflow 3) Parallel flow.",
+        "c": "The right answer is (b). Heat exchangers are typically classified into three categories based on the direction of fluid flow: 1) Counterflow 2) Crossflow 3) Parallel flow.",
+        "d": "The right answer is (b). Heat exchangers are typically classified into three categories based on the direction of fluid flow: 1) Counterflow 2) Crossflow 3) Parallel flow."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A periodic type exchanger is known as __________",
+      "answers": {
+        "a": "Direct contact heat exchanger ",
+        "b": "Indirect contact heat exchanger",
+        "c": "Recuperator",
+        "d": "Regenerator"
+      },
+      "explanations": {
+        "a": "The right answer is (d). A Direct Contact Heat Exchanger is a device where heat is transferred between two substances that are in direct contact with each other. Unlike indirect contact heat exchangers, where a solid wall separates the fluids to avoid mixing, direct contact heat exchangers allow the interacting fluids to mix freely.",
+        "b": "The right answer is (d). An Indirect Contact Heat Exchanger is a type of heat exchanger where the fluids involved in heat transfer are separated by a thermally conductive boundary layer. This boundary layer allows heat energy to flow but prevents the mixing or contamination of the fluids.",
+        "c": "The right answer is (d). A Recuperator is a type of heat exchanger that has separate flow paths for each fluid along their own passages, and heat is transferred through the separating walls.",
+        "d": "Correct, the right answer is (d). A periodic type heat exchanger is known as a Regenerative Heat Exchanger. This type of heat exchanger has a single flow path, which the hot and cold fluids alternately pass through. It's an efficient way to transfer heat between two fluids at different temperatures."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What property of cold fluid remains constant in the case of an evaporator?",
+      "answers": {
+        "a": "Volume",
+        "b": "Temperature",
+        "c": "Entropy",
+        "d": "Enthalpy"
+      },
+      "explanations": {
+        "a": "The right answer is (b). The evaporator is where the refrigerant absorbs heat and changes from a low-pressure liquid into a low-pressure gas. This phase change involves a substantial increase in volume. The exact amount of volume change depends on the specific properties of the refrigerant and the operating conditions of the system.",
+        "b": "Correct, the right answer is (b). In case of evaporator the temperature remains constant as pressure does not change. The temperature of hot fluid decreases.",
+        "c": "The right answer is (b). During the evaporation process, a liquid refrigerant absorbs heat and undergoes a phase change to become a vapor. This phase change is accompanied by an increase in entropy, as the molecules in the vapor state are more disordered and spread out than in cxthe liquid state.",
+        "d": "The right answer is (b). The change in enthalpy, often represented as ΔH, is positive for the process of vaporization (which occurs in the evaporator), indicating that heat is absorbed. The exact amount of enthalpy change depends on the specific properties of the refrigerant and the operating conditions of the system."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+     "question": "Number of categories heat exchanger can be classified based on the mechanical design of heat exchanger surface is _____________",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "explanations": {
+        "a": "The right answer is (c). The classification of heat exchanger on the basis of the mechanical design of heat exchanger surface: 1) Concentric tube 2) Shell and tube 3) Multiple shell.",
+        "b": "The right answer is (c). The classification of heat exchanger on the basis of the mechanical design of heat exchanger surface: 1) Concentric tube 2) Shell and tube 3) Multiple shell.",
+        "c": "Correct, the right answer is (c). The classification of heat exchanger on the basis of the mechanical design of heat exchanger surface: 1) Concentric tube 2) Shell and tube 3) Multiple shell.",
+        "d": "The right answer is (c). The classification of heat exchanger on the basis of the mechanical design of heat exchanger surface: 1) Concentric tube 2) Shell and tube 3) Multiple shell."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    }
+  ]
+}
