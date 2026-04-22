@@ -12,8 +12,13 @@
     <li><a href="https://www.youtube.com/watch?v=7SSzaKHC05s">Heat Exchangers Fundamentals and Design Analysis by Prof Prasanta Kumar </a></li>
     <li><a href="https://www.youtube.com/watch?v=7SSzaKHC05s">Das & Prof Indranil Ghosh - YouTube</a></li>
     <li><a href="https://www.youtube.com/watch?v=1Hx64M0nP_c">Lecture 65 : Problems on Heat Exchangers</a></li>
-    <td>Developer : Dr. K V Gangadharan | NITK</br></br>
-    Contributors :
+<td>Developers:<br/> 
+    <ul style="list-style-type: none;">
+     <li>Dr. Parthasarathy P | NITK</li>
+     <li>Dr. K V Gangadharan | NITK</li> 
+    </ul>
+    </br>   
+      Contributors :
     <ul style="list-style-type: none;">
     <li>Prasad Mandave | 181ME147 | NITK</li>
     <li>Ahemad Daniyal | 181ME105 |  NITK</li>
